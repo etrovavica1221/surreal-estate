@@ -1,0 +1,13 @@
+.AddProperty {
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+}
