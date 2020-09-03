@@ -23,7 +23,7 @@ const PropertyCard = ({ title, city, type, bedrooms, bathrooms, price, email }) 
       {bedrooms}
     </div>
     <div className="items">
-      c
+      <FontAwesomeIcon icon={faBath} />
       {bathrooms}
     </div>
     <div className="items">
