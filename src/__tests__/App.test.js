@@ -4,6 +4,6 @@ import App from '../components/App';
 
 test('renders correctly', () => {
   const { getByText } = render(<App />);
-  const header = getByText(/surreal estate/i);
-  expect(header).toBeInTheDocument();
+  const nav = getByText(/view properties/i);
+  expect(nav).toBeInTheDocument();
 });

@@ -117,7 +117,7 @@ function AddProperty() {
         <label htmlFor="email">
           Email:
           <input
-            id="email"
+            id="input-email"
             name="email"
             placeholder="your-email@gmail.com"
             type="email"
