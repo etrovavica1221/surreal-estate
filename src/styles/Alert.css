@@ -1,0 +1,19 @@
+.Alert.alert-error {
+    display: inline;
+    font-size: 18px;
+    border: 2px solid red;
+    padding: 5px;
+    margin: 5px auto;
+    background-color: rgb(255, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+.Alert.alert-success {
+    display: inline;
+    font-size: 18px;
+    border: 2px solid green;
+    padding: 5px;
+    margin: 5px auto;
+    background-color: rgb(0, 128, 0, 0.2);
+    border-radius: 6px;
+}

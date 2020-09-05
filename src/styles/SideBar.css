@@ -1,47 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 
-.navbar {
+.sidebar {
     background-color: white;
-    margin: 0;
-    padding: 0;
+    width: 16em;
+    border-right: 1px groove #828896;
     border-bottom: 1px groove #828896;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-family: 'Nunito', sans-serif;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.navbar-links {
-    margin-right: 0.5em;
-    margin-left: auto;
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
     padding: 0;
     text-align: center;
     align-items: center;
     text-decoration: none;
 }
 
-.navbar-links-item {
-    margin: 5px;
+.sidebar-links-item {
     font-size: 24px;
+    padding: 10px;
     border: 2px solid white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 2em;
-    padding-right: 2em;
     display: inline-block;
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
 
-.navbar-links-item:hover {
+.sidebar-links-item:hover {
     border: 2px groove rgb(145, 64, 202);
     background: lavender;
     transition: border 0.3s;
 }
 
-.navbar-links-item a {
+.sidebar-links-item a {
     text-decoration: none;
     color: rgb(104, 100, 100);
     font-weight: bolder;
+}
+
+h1 {
+    color: rgb(145, 64, 202);
+    font-size: bolder;
 }
