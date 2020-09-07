@@ -10,6 +10,10 @@ import { faBed } from '@fortawesome/free-solid-svg-icons';
 import { faBath } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
 const PropertyCard = ({ title, city, type, bedrooms, bathrooms, price, email }) => (
   <div className="Property">
     <div id="house-padding">
@@ -30,7 +34,7 @@ const PropertyCard = ({ title, city, type, bedrooms, bathrooms, price, email }) 
       {bathrooms}
     </div>
     <div className="items">
-      £{price}
+      £{numberWithCommas(price)}
     </div>
     <div className="items" id="email">
       <a href={`mailto: ${email}`}>
