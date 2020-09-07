@@ -8,12 +8,16 @@ function NavBar() {
     <div className="navbar">
       <img src={require('../styles/logo-house.png')} alt="logo" width="200" />
       <ul className="navbar-links">
-        <li className="navbar-links-item">
-          <Link to="/">View Properties</Link>
-        </li>
-        <li className="navbar-links-item">
-          <Link to="/add-property">Add a Property</Link>
-        </li>
+        <Link to="/">
+          <li className="navbar-links-item">
+            View Properties
+          </li>
+        </Link>
+        <Link to="/add-property">
+          <li className="navbar-links-item">
+            Add a Property
+          </li>
+        </Link>
       </ul>
     </div>
   );

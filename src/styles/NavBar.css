@@ -29,9 +29,10 @@
     padding-left: 2em;
     padding-right: 2em;
     display: inline-block;
-    color: black;
     font-weight: bold;
     text-decoration: none;
+    color: rgb(104, 100, 100);
+    font-weight: bolder;
 }
 
 .navbar-links-item:hover {
@@ -40,8 +41,3 @@
     transition: border 0.3s;
 }
 
-.navbar-links-item a {
-    text-decoration: none;
-    color: rgb(104, 100, 100);
-    font-weight: bolder;
-}

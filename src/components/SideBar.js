@@ -19,25 +19,37 @@ const SideBar = () => {
     <nav className="sidebar">
       <ul className="sidebar-links">
         <h1>Filter by city:</h1>
-        <li className="sidebar-links-item">
-          <Link to={buildQueryString('query', { city: 'Manchester' })}>Manchester</Link>
-        </li>
-        <li className="sidebar-links-item">
-          <Link to={buildQueryString('query', { city: 'Leeds' })}>Leeds</Link>
-        </li>
-        <li className="sidebar-links-item">
-          <Link to={buildQueryString('query', { city: 'Sheffield' })}>Sheffield</Link>
-        </li>
-        <li className="sidebar-links-item">
-          <Link to={buildQueryString('query', { city: 'Liverpool' })}>Liverpool</Link>
-        </li>
+        <Link to={buildQueryString('query', { city: 'Manchester' })}>
+          <li className="sidebar-links-item">
+            Manchester
+          </li>
+        </Link>
+        <Link to={buildQueryString('query', { city: 'Leeds' })}>
+          <li className="sidebar-links-item">
+            Leeds
+          </li>
+        </Link>
+        <Link to={buildQueryString('query', { city: 'Sheffield' })}>
+          <li className="sidebar-links-item">
+            Sheffield
+          </li>
+        </Link>
+        <Link to={buildQueryString('query', { city: 'Liverpool' })}>
+          <li className="sidebar-links-item">
+            Liverpool
+          </li>
+        </Link>
         <h1>Sort by price:</h1>
-        <li className="sidebar-links-item">
-          <Link to={buildQueryString('sort', { price: 1 })}>Ascending</Link>
-        </li>
-        <li className="sidebar-links-item">
-          <Link to={buildQueryString('sort', { price: -1 })}>Descending</Link>
-        </li>
+        <Link to={buildQueryString('sort', { price: 1 })}>
+          <li className="sidebar-links-item">
+            Ascending
+          </li>
+        </Link>
+        <Link to={buildQueryString('sort', { price: -1 })}>
+          <li className="sidebar-links-item">
+            Descending
+          </li>
+        </Link>
       </ul>
     </nav>
   );

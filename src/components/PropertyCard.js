@@ -36,12 +36,12 @@ const PropertyCard = ({ title, city, type, bedrooms, bathrooms, price, email }) 
     <div className="items">
       £{numberWithCommas(price)}
     </div>
-    <div className="items" id="email">
-      <a href={`mailto: ${email}`}>
+    <a href={`mailto: ${email}`}>
+      <div className="items" id="email">
         <FontAwesomeIcon icon={faEnvelope} />
         email
-      </a>
-    </div>
+      </div>
+    </a>
   </div>
 );
 

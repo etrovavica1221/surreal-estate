@@ -21,25 +21,20 @@
 }
 
 .sidebar-links-item {
-    font-size: 24px;
+    font-size: 21px;
     padding: 10px;
     border: 2px solid white;
     display: inline-block;
     color: black;
     font-weight: bold;
     text-decoration: none;
+    color: rgb(104, 100, 100);
 }
 
 .sidebar-links-item:hover {
     border: 2px groove rgb(145, 64, 202);
     background: lavender;
     transition: border 0.3s;
-}
-
-.sidebar-links-item a {
-    text-decoration: none;
-    color: rgb(104, 100, 100);
-    font-weight: bolder;
 }
 
 h1 {
