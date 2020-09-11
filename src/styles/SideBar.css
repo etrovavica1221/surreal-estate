@@ -2,7 +2,7 @@
 
 .sidebar {
     background-color: white;
-    width: 16em;
+    width: 17em;
     border-right: 1px groove #828896;
     border-bottom: 1px groove #828896;
     display: flex;
@@ -41,3 +41,20 @@ h1 {
     color: rgb(145, 64, 202);
     font-size: bolder;
 }
+
+#search-button {
+    padding: 10px;
+    margin: auto auto auto 0;
+}
+
+#search-form {
+    margin: 1em auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#search-form > input {
+    margin: 5px 0 5px 5px;
+    padding: 8px;
+}
+    
