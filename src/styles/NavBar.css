@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 .navbar {
     background-color: white;
@@ -7,12 +7,11 @@
     border-bottom: 1px groove #828896;
     display: flex;
     flex-direction: row;
-    font-family: 'Nunito', sans-serif;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .navbar-links {
-    margin-right: 0.5em;
+    margin-right: auto;
     margin-left: auto;
     padding: 0;
     text-align: center;
@@ -29,9 +28,9 @@
     padding-left: 2em;
     padding-right: 2em;
     display: inline-block;
-    font-weight: bold;
+    font-weight: bolder;
     text-decoration: none;
-    color: rgb(104, 100, 100);
+    color: rgb(35, 13, 95);
     font-weight: bolder;
 }
 
@@ -41,3 +40,30 @@
     transition: border 0.3s;
 }
 
+.kep-login-facebook.metro, #facebook-btn {
+    display: flex;
+    margin-right: 4em;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+#facebook-btn {
+    margin: auto;
+    border-radius: 0px;
+    font-family: Helvetica,sans-serif;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: calc(.27548vw + 12.71074px);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .3s,border-color .3s;
+    background-color: #4c69ba;
+    border: calc(.06887vw + .67769px) solid #4c69ba;
+    padding: calc(.34435vw + 13.38843px) calc(.34435vw + 18.38843px);
+}
