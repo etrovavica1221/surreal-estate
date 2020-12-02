@@ -21,6 +21,13 @@ function NavBar({ onLogin, userID, onLogout }) {
             Add a Property
           </li>
         </Link>
+        {userID && (
+          <Link to="/favorite">
+            <li className="navbar-links-item">
+              Saved properties
+            </li>
+          </Link>
+        )}
       </ul>
       {userID ? (
         <button id="facebook-btn" type="submit" onClick={onLogout}>Sign out</button>
