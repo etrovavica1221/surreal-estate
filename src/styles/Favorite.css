@@ -1,15 +1,15 @@
-.Properties {
+.Favorite {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
 
-.Properties > .item {
+.Favorite > .item {
     box-sizing: border-box;
     width: 8em;
 }
 
-#prop-container {
+#fav-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 1.5em;
