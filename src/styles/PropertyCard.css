@@ -40,6 +40,7 @@
 #save-btn,
 #delete-btn {
   width: 100%;
+  cursor: pointer;
 }
 
 .Property a {

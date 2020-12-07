@@ -1,7 +1,5 @@
 .Favorite {
     margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
 }
 
 .Favorite > .item {
@@ -11,7 +9,7 @@
 
 #fav-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 1.5em;
     justify-content: space-around;
     align-items: space-around;
