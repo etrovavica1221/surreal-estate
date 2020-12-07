@@ -27,13 +27,23 @@ function AddProperty() {
     setAlert({ message: '', isSuccess: false });
     axios.post('http://localhost:4000/api/v1/PropertyListing', fields)
       .then(() => setAlert({
-        message: 'Property has been created.',
+        message: 'Property has been created!',
         isSuccess: true,
-      }))
-      .catch(() => setAlert({
-        message: 'Server error! Try again later.',
+      }),
+      setTimeout(() => {
+        setAlert({
+          message: '',
+        });
+      }, 2500))
+      .catch((err) => setAlert({
+        message: `${err.message}! Try again later!`,
         isSuccess: false,
-      }));
+      }),
+      setTimeout(() => {
+        setAlert({
+          message: '',
+        });
+      }, 3000));
   };
 
   const handleFieldChange = (e) => {
