@@ -63,7 +63,7 @@ const Favorite = ({ userID }) => {
         {favListings.length > 0 && (
           favListings.map((fav) => (
             fav !== undefined && (
-            <div key={fav._id}>
+            <div id="favourite" key={fav._id}>
               <PropertyCard
                 {...fav.propertyListing}
                 propertyId={fav._id}

@@ -42,7 +42,7 @@ h1 {
 
 #search-button {
     padding: 10px;
-    margin: auto auto auto 0;
+    margin: auto 5px auto 0;
 }
 
 #search-form {
@@ -56,3 +56,18 @@ h1 {
     padding: 8px;
 }
     
+@media only screen and (max-width: 1050px) {
+    .sidebar {
+        width: 13em;
+    }
+
+    #search-form > input {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .sidebar {
+        display: none;
+    }
+}

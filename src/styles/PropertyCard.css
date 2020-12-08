@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 15px;
-  margin: 20px 20px;
+  margin: auto;
   border-style: groove;
   border-color: rgb(145, 64, 202);
   border-width: 3px;
@@ -65,4 +65,14 @@
   justify-self: center;
   margin: 0 auto 30px auto;
   background-color: rgb(235, 227, 222);
+}
+
+@media only screen and (max-width: 350px) {
+  #house-icon {
+      margin: 0 auto 0 auto;
+      width: 4em;
+      justify-self: center;
+      background-color: rgb(235, 227, 222);
+      padding: 4em;
+  }
 }
