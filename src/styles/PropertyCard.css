@@ -1,6 +1,7 @@
 .Property {
   display: flex;
   flex-direction: column;
+  width: 16em;
   padding: 15px;
   margin: auto;
   border-style: groove;
@@ -74,5 +75,9 @@
       justify-self: center;
       background-color: rgb(235, 227, 222);
       padding: 4em;
+  }
+
+  .Property {
+    width: 13em;
   }
 }
