@@ -12,16 +12,10 @@ import { faBed } from '@fortawesome/free-solid-svg-icons';
 import { faBath } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
-
 // eslint-disable-next-line max-len
 // eslint-disable-next-line object-curly-newline
 const PropertyCard = ({ favourite, propertyId, _id, onDelete, onSaveProperty, userID, title, city, type, bedrooms, bathrooms, price, email }) => {
   const [remove, setRemove] = useState('🗑️Delete');
-
-  // const onSave = 
 
   return (
     <div className="Property">
@@ -43,7 +37,7 @@ const PropertyCard = ({ favourite, propertyId, _id, onDelete, onSaveProperty, us
         {bathrooms}
       </div>
       <div className="items">
-        £{numberWithCommas(price)}
+        £{price !== undefined && price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
       </div>
       <a href={`mailto: ${email}`}>
         <div className="items" id="email">
@@ -71,7 +65,6 @@ const PropertyCard = ({ favourite, propertyId, _id, onDelete, onSaveProperty, us
               value={favourite.includes(_id) ? ('★Saved!') : ('⭐Save')}
               className="save"
               onClick={function (e) {
-                // e.target.value === '★Saved!';
                 onSaveProperty(_id);
               }}
             />

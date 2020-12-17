@@ -25,7 +25,7 @@ function AddProperty() {
   const handleAddProperty = (e) => {
     e.preventDefault();
     setAlert({ message: '', isSuccess: false });
-    axios.post('http://localhost:4000/api/v1/PropertyListing', fields)
+    axios.post('https://vpetrova-surreal-estate.herokuapp.com/api/v1/PropertyListing', fields)
       .then(() => setAlert({
         message: 'Property has been created!',
         isSuccess: true,

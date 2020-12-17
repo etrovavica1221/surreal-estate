@@ -21,7 +21,7 @@ const Favorite = ({ userID }) => {
   useEffect(() => {
     let isMounted = true;
 
-    axios.get('http://localhost:4000/api/v1/Favourite?populate=propertyListing')
+    axios.get('https://vpetrova-surreal-estate.herokuapp.com/api/v1/Favourite?populate=propertyListing')
       .then(({ data }) => setFavListings(data))
       .catch((err) => {
         if (isMounted) {
@@ -42,7 +42,7 @@ const Favorite = ({ userID }) => {
   }, [userID]);
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:4000/api/v1/Favourite/${id}`)
+    axios.delete(`https://vpetrova-surreal-estate.herokuapp.com/api/v1/Favourite/${id}`)
       .then(() => console.log('deleted!'))
       .catch((err) => {
         setAlert({

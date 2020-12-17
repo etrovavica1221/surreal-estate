@@ -23,7 +23,7 @@ const Properties = ({ userID }) => {
   const [properties, setProperties] = useState(initialState.properties);
   const { search } = useLocation();
   useEffect(() => {
-    axios.get(`http://localhost:4000/api/v1/PropertyListing${search}`)
+    axios.get(`https://vpetrova-surreal-estate.herokuapp.com/api/v1/PropertyListing${search}`)
       .then(({ data }) => setProperties(data))
       .catch((err) => {
         setAlert({ message: `${err.message}! Try again later!` });
@@ -39,7 +39,7 @@ const Properties = ({ userID }) => {
     let isMounted = true;
 
     axios.post(
-      'http://localhost:4000/api/v1/Favourite?populate=propertyListing', {
+      'https://vpetrova-surreal-estate.herokuapp.com/api/v1/Favourite?populate=propertyListing', {
         propertyListing: propertyId,
         fbUserId: userID,
       },
@@ -61,7 +61,7 @@ const Properties = ({ userID }) => {
   useEffect(() => {
     let isMounted = true;
 
-    axios.get('http://localhost:4000/api/v1/Favourite')
+    axios.get('https://vpetrova-surreal-estate.herokuapp.com/api/v1/Favourite')
       .then(({ data }) => { if (isMounted) setFavourite(data.map((p) => p.propertyListing)); })
       .catch((err) => console.log(err));
     return () => { isMounted = false; };
