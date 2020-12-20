@@ -21,7 +21,7 @@ const Favorite = ({ userID }) => {
   const [favListings, setFavListings] = useState(favState.favListings);
 
   useEffect(() => {
-    axios.get(`https://vpetrova-surreal-estate.herokuapp.com/api/v1/PropertyListing`)
+    axios.get('https://vpetrova-surreal-estate.herokuapp.com/api/v1/PropertyListing')
       .then(({ data }) => setProperties(data))
       .catch((err) => {
         setAlert({ message: `${err.message}! Try again later!` });
