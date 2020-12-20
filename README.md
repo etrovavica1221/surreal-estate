@@ -2,6 +2,7 @@
 
 I was set the task of building a Surreal Estate App. 
 In the app you can view properties, create a property, save a property and delete it from your saved properties.
+Also you can sign up with Facebook.
 
 ## Setup
 
