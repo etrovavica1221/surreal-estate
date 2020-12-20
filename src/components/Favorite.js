@@ -9,6 +9,7 @@ import '../styles/Alert.css';
 const Favorite = ({ userID }) => {
   const favState = {
     favListings: [],
+    properties: [],
     alert: {
       message: '',
       isSuccess: false,
@@ -16,12 +17,26 @@ const Favorite = ({ userID }) => {
   };
 
   const [alert, setAlert] = useState(favState.alert);
+  const [properties, setProperties] = useState(favState.properties);
   const [favListings, setFavListings] = useState(favState.favListings);
+
+  useEffect(() => {
+    axios.get(`https://vpetrova-surreal-estate.herokuapp.com/api/v1/PropertyListing`)
+      .then(({ data }) => setProperties(data))
+      .catch((err) => {
+        setAlert({ message: `${err.message}! Try again later!` });
+      },
+      setTimeout(() => {
+        setAlert({
+          message: '',
+        });
+      }, 3000));
+  }, [userID]);
 
   useEffect(() => {
     let isMounted = true;
 
-    axios.get('https://vpetrova-surreal-estate.herokuapp.com/api/v1/Favourite?populate=propertyListing')
+    axios.get('https://vpetrova-surreal-estate.herokuapp.com/api/v1/Favourite')
       .then(({ data }) => setFavListings(data))
       .catch((err) => {
         if (isMounted) {
@@ -65,7 +80,7 @@ const Favorite = ({ userID }) => {
             fav !== undefined && (
             <div id="favourite" key={fav._id}>
               <PropertyCard
-                {...fav.propertyListing}
+                {...properties.filter(p => p._id === fav.propertyListing)[0]}
                 propertyId={fav._id}
                 userID={userID}
                 onDelete={handleDelete}
