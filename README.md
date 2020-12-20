@@ -1,26 +1,33 @@
 # Surreal Estate App
 
-I was set the task of building a Surreal Estate App.
+I was set the task of building a Surreal Estate App. 
+In the app you can view properties, create a property, save a property and delete it from your saved properties.
 
 ## Setup
 
-Clone my repo and open index.html, it will open a tab in your browser.
+If you would like to see the code, clone my repository. To run in localhost:
+- npm i
+- npm start
+
+or click the link to see the deployed app
+
+https://surreal-estate.netlify.app/ 
 
 <p float="left">
     <div>Desktop view</div>
-    <img src="" width="412" />
+    <img src="./src/styles/desktop.png" width="412" />
     <div>Mobile view</div>
-    <img src="" width="160" />
+    <img src="./src/styles/mobile.png" width="160" />
 </p>
 
 ## Technologies
 
 The project was made with React using hooks.
 
-<!-- The following packages were used:
+The following packages were used:
 
 - Axios
-- PropTypes -->
+- PropTypes
 
 ## Testing utilities 
 
