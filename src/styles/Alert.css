@@ -5,9 +5,10 @@
     position: fixed;
     min-width: 60%; 
 	top:30%;
-    bottom: 50%;
-    left: 20%;
-    margin: auto;
+    bottom: 30%;
+    left: 0%;
+    right: 0%;
+    margin-left: 0;
     font-size: 2em;
     padding: 1em;
     border-radius: 6px;
@@ -21,4 +22,10 @@
 .Alert.alert-error {
     border: 3px solid rgb(59, 33, 33);
     background-color: rgba(190, 54, 54, 0.945);
+}
+
+@media only screen and (min-width: 740px) {
+    .Alert {
+        width: 98%;
+    }
 }
